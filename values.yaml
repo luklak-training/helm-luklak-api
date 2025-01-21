@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: thanh5320/luklak-api-app
-  tag: 9
+  tag: 40
   pullPolicy: IfNotPresent
 
 service:
