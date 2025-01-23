@@ -35,3 +35,6 @@ spec:
         - name: hazelcast-config
           configMap:
             name: hazelcast-config
+            items:
+              - key: hazelcast.yaml
+                path: hazelcast.yaml
