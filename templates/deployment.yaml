@@ -28,3 +28,10 @@ spec:
             limits:
               memory: {{ .Values.resources.limits.memory }}
               cpu: {{ .Values.resources.limits.cpu }}
+          volumeMounts:
+            - mountPath: /config
+              name: hazelcast
+      volumes:
+        - name: hazelcast-config
+          configMap:
+            name: hazelcast-config
